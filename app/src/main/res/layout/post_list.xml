@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:padding="10dp">
+
+    <TextView
+        android:id="@+id/id"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/imageIv"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:adjustViewBounds="true"
+        android:background="#ffffff"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_baseline_image_black"
+        />
+
+    <TextView
+        android:id="@+id/judulTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Judul Artikel"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+         />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/kategoriTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Kategori"
+        />
+    <TextView
+        android:id="@+id/separatorTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/kategoriTv"
+        />
+    <TextView
+        android:id="@+id/tanggalTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30/11/2020"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/separatorTv"
+        />
+</RelativeLayout>
+    <TextView
+        android:id="@+id/contentTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kategoriTv"
+        android:layout_marginTop="5dp"
+        android:maxLines="4"
+        android:ellipsize="end"
+        android:text="The description will show 4 lines from original article"
+        android:textColor="#000" />
+
+
+
+
+
+
+</LinearLayout>
